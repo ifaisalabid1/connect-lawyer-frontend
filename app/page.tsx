@@ -4,13 +4,7 @@ import Link from "next/link";
 import { CircleChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import LawyerCarousel from "@/components/LawyerCarousel";
 
 export default function Home() {
   const ctaCards = [
@@ -298,15 +292,12 @@ export default function Home() {
         </h2>
 
         <div className="mt-6">
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <div></div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+          <LawyerCarousel />
+          <div className="mt-8 flex justify-center">
+            <Button className="bg-amber-600" size="lg" asChild>
+              <Link href="">View All</Link>
+            </Button>
+          </div>
         </div>
       </section>
       {/* end lawyer carousel */}

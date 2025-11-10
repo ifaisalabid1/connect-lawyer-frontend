@@ -4,3 +4,17 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: oklch(51.1% 0.096 186.391) !important;
+}
