@@ -18,3 +18,19 @@
 .swiper-pagination-bullet {
   background-color: oklch(51.1% 0.096 186.391) !important;
 }
+
+.blog {
+  background-image: url("/images/blog-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: oklch(38.6% 0.063 188.416);
+}
+
+.bg-2 {
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+}

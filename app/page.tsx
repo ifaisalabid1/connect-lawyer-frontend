@@ -293,6 +293,7 @@ export default function Home() {
 
         <div className="mt-6">
           <LawyerCarousel />
+
           <div className="mt-8 flex justify-center">
             <Button className="bg-amber-600" size="lg" asChild>
               <Link href="">View All</Link>
@@ -301,6 +302,77 @@ export default function Home() {
         </div>
       </section>
       {/* end lawyer carousel */}
+
+      {/* cta 3 */}
+      <section className="mt-12 container">
+        <div className="bg-teal-100 pt-8 pb-6 px-4 rounded-lg">
+          <p className="uppercase text-sm font-bold font-epilogue text-teal-700">
+            Got a Legal Question?
+          </p>
+          <h2 className="font-bold text-3xl mt-3">
+            <span>Join Our Legal Forum and </span>
+            <span className="text-teal-700">Get Expert Advice for Free</span>
+          </h2>
+
+          <p className="mt-4 text-lg">
+            Make an appointment with Advocates and Legal consultancy, one of the
+            leading law firms in Dubai and across the UAE, Today! or chat with a
+            professional lawyer online for free across UAE now, We work on a
+            wide range of legal matters
+          </p>
+
+          <div className="mt-8">
+            <Button className="bg-amber-600 w-full" size="lg" asChild>
+              <Link href="">View Legal Forum</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+      {/* end cta 3 */}
+
+      {/* blog */}
+      <section className="container mt-12">
+        <div className="grid grid-cols-1 gap-4">
+          <div className="blog py-6 rounded-lg px-4">
+            <p className="uppercase text-sm font-bold font-epilogue text-teal-400">
+              Our Blog
+            </p>
+            <h2 className="font-bold text-3xl mt-3 text-teal-50">
+              Stay Informed with Our Latest Legal Insights.
+            </h2>
+
+            <div className="mt-12">
+              <Link
+                href=""
+                className="text-teal-400 flex items-center gap-1 font-bold text-lg"
+              >
+                View Blog
+                <CircleChevronRight size={18} />
+              </Link>
+            </div>
+          </div>
+
+          <div className="bg-2 py-6 rounded-lg px-4">
+            <p className="uppercase text-sm font-bold font-epilogue text-teal-50">
+              Are You a Lawyer?
+            </p>
+            <h2 className="font-bold text-3xl mt-3 text-teal-900">
+              Connect with Clients and Grow Your Practice.
+            </h2>
+
+            <div className="mt-12">
+              <Link
+                href=""
+                className="text-teal-900 flex items-center gap-1 font-bold text-lg"
+              >
+                Join Now
+                <CircleChevronRight size={18} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end blog */}
     </div>
   );
 }

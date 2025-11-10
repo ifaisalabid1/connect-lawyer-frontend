@@ -61,7 +61,8 @@ const LawyerCarousel = () => {
   return (
     <Swiper
       modules={[Navigation, Pagination]}
-      slidesPerView={1}
+      slidesPerView={1.2}
+      spaceBetween={15}
       navigation
       pagination={{ clickable: true }}
     >
