@@ -102,7 +102,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="my-16">
+    <div>
       {/* hero */}
       <section className="container hero py-6 grid grid-cols-1 gap-6">
         <div>
