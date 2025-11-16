@@ -8,8 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 import { Lawyer } from "@/types/lawyer";
-
-import { Spinner } from "@/components/ui/spinner";
+import { Skeleton } from "@/components/ui/skeleton";
 import LawyerCard from "./LawyerCard";
 
 const LawyerCarousel = () => {
@@ -85,9 +84,12 @@ const LawyerCarousel = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center gap-2 justify-center">
-        <Spinner className="size-5 text-teal-700" />
-        <p>Loading Lawyers...</p>
+      <div className="flex flex-col space-y-3 items-center">
+        <Skeleton className="h-[125px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
       </div>
     );
   }
