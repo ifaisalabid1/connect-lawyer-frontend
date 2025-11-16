@@ -75,56 +75,55 @@ export default function RootLayout({
       <body className={`${manrope.variable} ${epilogue.variable} antialiased`}>
         <Header />
         {children}
-        <div className="mt-12">
-          <footer>
-            <div className="container">
-              <Image
-                src="/images/logo.webp"
-                alt=""
-                width={250}
-                height={250}
-                className="mx-auto"
-              />
 
-              <nav className="mt-8">
-                <ul className="flex flex-col items-center justify-center text-center gap-4">
-                  {nav.map((item, key) => (
-                    <li className="font-medium text-teal-900" key={key}>
-                      <Link href={item.link}>{item.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+        <footer className="mt-12">
+          <div className="container">
+            <Image
+              src="/images/logo.webp"
+              alt=""
+              width={250}
+              height={250}
+              className="mx-auto"
+            />
 
-              <div className="relative flex items-center justify-center w-full my-8">
-                <div className="absolute w-full border-t border-teal-600"></div>
+            <nav className="mt-8">
+              <ul className="flex flex-col items-center justify-center text-center gap-4">
+                {nav.map((item, key) => (
+                  <li className="font-medium text-teal-900" key={key}>
+                    <Link href={item.link}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-                <Link href="#" className="z-10">
-                  <div className="p-1 rounded-full bg-teal-600">
-                    <ChevronUp color="oklch(98.4% 0.014 180.72)" />
-                  </div>
-                </Link>
-              </div>
+            <div className="relative flex items-center justify-center w-full my-8">
+              <div className="absolute w-full border-t border-teal-600"></div>
 
-              <div className="flex items-center justify-center gap-3">
-                <Link href="">
-                  <Facebook size={20} />
-                </Link>
-                <Link href="">
-                  <Instagram size={20} />
-                </Link>
-                <Link href="">
-                  <Linkedin size={20} />
-                </Link>
-              </div>
-
-              <div className="my-6 text-sm text-center">
-                &copy; {new Date().getFullYear()} Proudly Powered by Connect
-                Legal.
-              </div>
+              <Link href="#" className="z-10">
+                <div className="p-1 rounded-full bg-teal-600">
+                  <ChevronUp color="oklch(98.4% 0.014 180.72)" />
+                </div>
+              </Link>
             </div>
-          </footer>
-        </div>
+
+            <div className="flex items-center justify-center gap-3">
+              <Link href="">
+                <Facebook size={20} />
+              </Link>
+              <Link href="">
+                <Instagram size={20} />
+              </Link>
+              <Link href="">
+                <Linkedin size={20} />
+              </Link>
+            </div>
+
+            <div className="my-6 text-sm text-center">
+              &copy; {new Date().getFullYear()} Proudly Powered by Connect
+              Legal.
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
