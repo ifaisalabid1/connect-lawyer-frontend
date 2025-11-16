@@ -5,6 +5,7 @@ import { CircleChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import LawyerCarousel from "@/components/LawyerCarousel";
+import { Suspense } from "react";
 
 export default function Home() {
   const ctaCards = [
@@ -292,8 +293,9 @@ export default function Home() {
         </h2>
 
         <div className="mt-6">
-          <LawyerCarousel />
-
+          <Suspense fallback={<div>Loading...</div>}>
+            <LawyerCarousel />
+          </Suspense>
           <div className="mt-8 flex justify-center">
             <Button className="bg-amber-600" size="lg" asChild>
               <Link href="">View All</Link>
